@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* styling the two main sections */
+main {
+  display: flex;
+  max-width: 100%;
+}
+/* image styling */
+.pic-1 {
+  width: 550px;
+}
+.pic-2 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+  display: flex;
+  padding-left: 130px;
+}
+
+/* styling the logo area */
+.logo-bg {
+  background-color: rgba(10, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 250px;
+  width: 550px;
+}
+.odin {
+  font-family: New Rocker;
+  font-size: 80px;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+}
+.credit {
+  color: white;
+  position: absolute;
+  top: 1025px;
+  font-size: 15px;
+  left: 160px;
+}
+.credit a {
+  color: white;
+}
+/* second section styling */
+.about {
+  background-color: rgb(249, 250, 251);
+  padding-top: 200px;
+  font-size: 25px;
+  padding-left: 50px;
+  padding-right: 35px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.para2 {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.innerbox {
+  background-color: white;
+  box-shadow: 0 7px 2px rgba(206, 204, 204, 0.204);
+  border-radius: 3px;
+  height: 360px;
+}
+.para3 {
+  padding: 40px;
+  font-family: Roboto;
+  font-size: 25px;
+}
+
+/* styling the form */
+.innerform {
+  display: flex;
+  justify-content: space-between;
+}
+#firstform {
+  padding-left: 40px;
+}
+label {
+  font-size: 15px;
+  color: rgb(70, 59, 59);
+  display: block;
+  font-family: Roboto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+  padding: 5px;
+  width: 200px;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #e5e7eb;
+}
+input:focus {
+  border: 1px solid rgb(10, 10, 212);
+  box-shadow: 0 2px 5px 2px rgba(66, 65, 65, 0.204);
+}
+
+.innerbox2 {
+  background-color: rgb(249, 250, 251);
+  margin-top: 7px;
+  padding: 30px 50px 170px;
+}
+
+/* button styling */
+.submit {
+  background-color: #596d48;
+  border: 2px solid #596d48;
+  width: 30%;
+  height: 45px;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 7px;
+  font-size: 14px;
+  border-radius: 5px;
+  box-shadow: 0 7px 7px 2px rgba(66, 65, 65, 0.204);
+}
+.already {
+  padding-top: 30px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 18px;
+}
+.already a {
+  color: #596d48;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.error {
+  color: #ff3860;
+  font-size: 14px;
+}
+
+@media (max-width: 584px) and (min-width: 475px) {
+  main {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  form .innerform {
+    width: 100%;
+  }
+  .box2 {
+    width: 100%;
+  }
+  .pic-1 {
+    width: 100%;
+  }
+  .logo-bg {
+    width: 100%;
+  }
+  .names {
+    width: 100%;
+  }
+  label,
+  input {
+    width: 100%;
+    display: block;
+  }
+  .innerform {
+    justify-content: space-between;
+  }
+  #secondform {
+    padding-left: 30px;
+  }
+  #firstform {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 425px) and (min-width: 375px) {
+  main {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  form .innerform {
+    width: 100%;
+  }
+  .box2 {
+    width: 100%;
+  }
+  .pic-1 {
+    width: 100%;
+  }
+  .logo-bg {
+    width: 100%;
+  }
+  .names {
+    width: 100%;
+  }
+  label,
+  input {
+    width: 100%;
+    display: block;
+  }
+  .innerform {
+    justify-content: space-between;
+  }
+  #secondform {
+    padding-left: 30px;
+  }
+  #firstform {
+    padding-left: 30px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="password"] {
+    width: 150px;
+  }
+  .pic-2 {
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #secondform {
+    padding-left: 30px;
+  }
+  #firstform {
+    padding-left: 30px;
+  }
+}
